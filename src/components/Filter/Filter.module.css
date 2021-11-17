@@ -1,0 +1,10 @@
+.accorHeading button {
+  font-size: 1.6rem;
+  z-index: 10;
+}
+
+.label,
+.label input {
+  cursor: pointer;
+  padding: 1rem;
+}

@@ -1,0 +1,13 @@
+footer {
+  color: var(--gray-text-color);
+  display: flex;
+  padding-bottom: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 1.3rem;
+  }
+}

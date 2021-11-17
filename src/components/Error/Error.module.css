@@ -1,0 +1,19 @@
+.box {
+  height: 65vh;
+  align-items: flex-start;
+}
+
+.error {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.error h3 {
+  margin: 0;
+  padding: 2rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+}

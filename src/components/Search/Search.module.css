@@ -1,0 +1,25 @@
+.input {
+  font-size: inherit;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.clear {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--gray-text-color);
+}
+
+.clear:hover {
+  color: var(--main-text-color);
+  transition: all 0.3s;
+}
+
+.inputGroup {
+  background-color: var(--bg-color--card);
+}
+
+.search {
+  font-size: 2rem;
+  color: var(--main-text-color);
+}
