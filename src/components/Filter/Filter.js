@@ -58,7 +58,7 @@ export class Filter extends Component {
 
   render() {
     return (
-      <Col md={5} sm={12} className='mb-3'>
+      <Col md={6} sm={12} className='mb-3'>
         <Accordion>
           <Accordion.Item eventKey='0'>
             <Accordion.Header className={styles.accorHeading}>

@@ -25,7 +25,7 @@ export class Search extends Component {
 
   render() {
     return (
-      <Col md={5} sm={12} className='mb-3'>
+      <Col md={6} sm={12} className='mb-3'>
         <InputGroup>
           <InputGroup.Text className={styles.inputGroup}>
             <i className={`${styles.search} bi bi-search`} />

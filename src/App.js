@@ -19,6 +19,7 @@ const initialState = {
   searchResults: [],
   filterBy: [],
   filterResults: [],
+  isEmpty: false,
 };
 
 class App extends Component {
@@ -51,14 +52,17 @@ class App extends Component {
 
   displaysResults = () => {
     let data;
-
+    let message;
     if (!this.state.query) data = this.state.products;
     if (this.state.query) data = this.state.searchResults;
     if (this.state.filterBy.length !== 0) data = this.state.filterResults;
 
-    if (data.length === 0)
-      return <Error message='Search results - Sorry No results found.' />;
-    else return <Result data={data} onDelete={this.deleteHandler} />;
+    if (data.length === 0) {
+      if (this.state.products.length === 0) message = 'No Products are added.';
+      else message = 'Search results - Sorry No results found.';
+
+      return <Error message={message} />;
+    } else return <Result data={data} onDelete={this.deleteHandler} />;
   };
 
   render() {
@@ -77,9 +81,9 @@ class App extends Component {
                 catalogueHandler={this.catalogueHandler}
               />
             )}
-            <Col md={2} sm={12}>
+            {/* <Col md={2} sm={12}>
               <Button variant='success'>Add Item</Button>
-            </Col>
+            </Col> */}
           </Row>
         </header>
         <main>

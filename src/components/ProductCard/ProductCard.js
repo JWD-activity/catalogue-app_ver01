@@ -9,7 +9,6 @@ function ProductCard({ product, onDelete }) {
 
   const onDeleteHandler = (id) => {
     onDelete(id);
-    console.log(id, title);
   };
 
   return (
