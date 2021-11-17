@@ -24,7 +24,6 @@
 
 ### Things I applied
 - JavaScript Array Methods: `map, filter, includes` 
-- JavaScript Number and Math Methods: `Number.isNaN(), Math.pow()`
 - React  
   - `Class components`
   - `Founction components`
